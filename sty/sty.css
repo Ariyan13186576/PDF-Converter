@@ -1,0 +1,91 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f4f4f9;
+    }
+
+    .container {
+        text-align: center;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 90%;
+        max-width: 500px;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    .upload-section {
+        margin-bottom: 20px;
+    }
+
+    input[type="file"] {
+        margin-bottom: 10px;
+    }
+
+    .preview-section {
+        margin-top: 20px;
+    }
+
+    #imagePreview img {
+        max-width: 100px;
+        margin: 5px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #downloadSection {
+        margin-top: 20px;
+    }
+
+    .download-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .download-button:hover {
+        background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 10px;
+        }
+
+        .container {
+            padding: 15px;
+        }
+
+        .download-button {
+            font-size: 14px;
+            padding: 8px 15px;
+        }
+
+        #imagePreview img {
+            max-width: 80px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .download-button {
+            font-size: 12px;
+            padding: 6px 10px;
+        }
+    }
